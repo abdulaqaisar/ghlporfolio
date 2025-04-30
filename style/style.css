@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #0061f2;
+    --secondary-color: #00c6ff;
+    --text-color: #222;
+    --bg-light: #f7faff;
+    --font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background: #fff;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-img {
+    /* height: 45px;
+    width: 90px; */
+
+    height: 70px;
+    width: 250px;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 900;
+    transition: color 0.3s;
+    font-size:large;
+  }
+  
+  .nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../asserts/images/test.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    padding: 140px 20px;
+    text-align: center;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    background: #fff;
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    background: var(--bg-light);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .portfolio-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s;
+    padding: 20px;
+  }
+  
+  
+  .portfolio-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .portfolio-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .ghl-badge {
+    /* width: 2px; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 10px; */
+    height: 50px;
+  }
+  
+  .btn-secondary {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: url('../assets/images/contact-bg.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.85);
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+
